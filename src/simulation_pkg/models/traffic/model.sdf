@@ -10,7 +10,7 @@
         <geometry>
           <mesh>
             <uri>model://traffic/meshes/traffic.dae</uri>
-            <scale>0.0029 0.0029 0.0029</scale>
+            <scale>0.00348 0.00348 0.00348</scale>
           </mesh>
         </geometry>
       </visual>
@@ -18,7 +18,7 @@
 
     <!-- 빨간 불빛 --> 
     <link name="red_light_link">
-      <pose>2.535 -0.28 2.538 1.57 0 0</pose> 
+      <pose>3.050000 -0.28 3.025000 1.57 0 0</pose> 
       <light name="red" type="spot"> 
         <pose>0 -0.12 -0.28 2.469999 0 0</pose>
         <attenuation>
@@ -38,11 +38,11 @@
       <visual name="red">
         <geometry> 
           <cylinder>
-            <radius>0.3</radius>
+            <radius>0.36</radius>
             <length>0.1</length>
           </cylinder>
           <sphere>
-            <radius>0.4</radius>
+            <radius>0.48</radius>
           </sphere>
         </geometry>
         <transparency>0.6</transparency>
@@ -57,7 +57,7 @@
 
     <!-- 노란 불빛 -->
     <link name="yellow_light_link"> 
-      <pose>3.26 -0.293 2.538 1.57 0 0</pose> 
+      <pose>3.900000 -0.293 3.025000 1.57 0 0</pose>  
       <light name="yellow" type="spot"> 
         <pose>0 -0.12 -0.28 2.469999 0 0</pose>
         <attenuation>
@@ -76,11 +76,11 @@
       <visual name="yellow"> 
         <geometry>
           <cylinder>
-            <radius>0.30</radius>
+            <radius>0.36</radius>
             <length>0.1</length>
           </cylinder>
           <sphere>
-            <radius>0.4</radius>
+            <radius>0.48</radius>
           </sphere>
         </geometry>
         <transparency>0.6</transparency>
@@ -95,7 +95,7 @@
 
     <!-- 초록 불빛 -->
     <link name="green_light_link"> 
-      <pose>3.984 -0.28 2.538  1.57 0 0</pose>
+      <pose>4.8 -0.28 3.025  1.57 0 0</pose>
       <light name="green" type="spot"> 
         <pose>0 -0.12 -0.28 2.469999 0 0</pose>
         <attenuation>
@@ -115,11 +115,11 @@
       <visual name="green"> 
         <geometry>
           <cylinder>
-            <radius>0.30</radius>
+            <radius>0.36</radius>
             <length>0.1</length>
           </cylinder>
           <sphere>
-            <radius>0.4</radius>
+            <radius>0.48</radius>
           </sphere>
         </geometry>
         <transparency>0.6</transparency>

@@ -88,11 +88,11 @@ def load_model(entity_name, model_name, random_coordinates):
     os.system(f"ros2 run gazebo_ros spawn_entity.py -file {model_file} -entity {entity_name} -x {x} -y {y} -z {z} -R {roll} -P {pitch} -Y {yaw}")
 
 def driving_ego():  
-    x_min = -2.568994
-    x_max = -2.526850
+    x_min = -2.839825
+    x_max = -2.291482
     
-    y_min = -22.750868 
-    y_max = -22.666580
+    y_min = -26.873514
+    y_max = -26.792286
     
     random_x = random.uniform(x_min, x_max)
     random_y = random.uniform(y_min, y_max)
@@ -122,11 +122,11 @@ def old_obstacle_stand(): # 신호등
     return x, y, z, r, p, y
 
 def traffic_light_stand(): # 신호등   
-    x_min = -5.913965
-    x_max = -5.337101
+    x_min = -6.426400
+    x_max = -6.369065
     
-    y_min = 17.857704
-    y_max = 17.949493 
+    y_min = 21.519033
+    y_max = 21.672157
 
     random_x = random.uniform(x_min, x_max)
     random_y = random.uniform(y_min, y_max)
@@ -142,12 +142,12 @@ def traffic_light_stand(): # 신호등
 # 장애물 회피 차량 + 범위 지정 + 랜덤
 model_types = ["prius_hybrid_ob1", "prius_hybrid_ob2", "prius_hybrid_ob3", "hatchback_green", "hatchback_yellow"] 
 
-obstacle_coordinates1 = (12.251981, -15.909271, 0.00, 0.00, 0.00, 2.484252)
-obstacle_coordinates_1= (-3.659642, 8.710748, 0.00, 0.00, 0.00, -0.013934)
-obstacle_coordinates_2= (-3.659642, 2.037476, 0.00, 0.00, 0.00, -0.013934)
+obstacle_coordinates1 = (15.011291, -18.902649,  0.00, 0.00, 0.00, 2.484450)
+obstacle_coordinates_1= (-4.279829, 10.432541, 0.00, 0.00, 0.00, -0.013934)
+obstacle_coordinates_2= (-4.279518, 2.312789, 0.00, 0.00, 0.00, -0.013934)
 
-obstacle_coordinates2 = [(11.884767, 11.605120), (12.040719, 10.060495), (12.230394, 8.181866)]
-obstacle_coordinates3 = [(16.106836, -0.111269), (16.281788, -1.844067), (16.366463, -3.446680)]
+obstacle_coordinates2 = [(14.106131, 14.337297), (14.438156, 12.412285), (14.653111, 10.377649)]
+obstacle_coordinates3 = [(19.341566, 0.476374), (19.585851, -1.765446), (19.798090, -3.713369)]
 
 def obstacle_coord(coordinates):  
     x_obstacle, y_obstacle = random.choice(coordinates)

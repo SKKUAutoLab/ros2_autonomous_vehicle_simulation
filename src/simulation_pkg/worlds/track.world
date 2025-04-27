@@ -167,7 +167,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>53.83 40.473</size>
+              <size>64.596 48.5676</size>
             </plane>
           </geometry>
           <surface>
@@ -181,7 +181,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>53.83 40.473</size>
+              <size>64.596 48.5676</size>
             </plane>
           </geometry>
           
